@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+    margin: 20px 50px;
+}
+
+.card {
+    background-color: #aea8ebc7;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 0 rgba(255, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.card h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inputs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    flex-basis: calc(50% - 10px);
+}
+
+.input-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.dropdowns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dropdown-group {
+    flex-basis: calc(50% - 10px);
+}
+
+.dropdown-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dropdown-group select {
+    /* appearance: none; */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.dropdown-group select:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+
+.dropdown-group select option {
+    background-color: #fff;
+    color: #333;
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
